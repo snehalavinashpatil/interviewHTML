@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="logic.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body ng-app="myApp" ng-controller="logicController">
+        <div class="page-wrapper">
+            <div class="nav-wrapper">
+             <div class="grad-bar"></div>
+             <nav>
+                    <div id="logo" class="Menu-title">DEMO</div>
+                        <ul class="menu">
+                            <li>
+                                <a href="#Home">Home</a>
+                                <ul class="dropdowncontent">
+                                    <li><a href="#">Home 1</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 3</a></li>
+                                    <li><a href="#">Home 4</a></li>
+                                    <li><a href="#">Home 5</a></li>
+                                    <li><a href="#">Home 6</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="#Headers">Headers</a></li>
+                            <li><a href="#Sliders">Sliders</a></li>
+                            <li><a href="#Pages">Pages</a></li>
+                            <li><a href="#Blog">Blog</a></li>
+                            <li><a href="#Shop">Shop</a></li>
+                            <li><a href="#Elements">Elements</a></li>
+                            <li><a>|</a></li>
+                            <li><a>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="20px" height="20px" viewBox="0 0 40 36" style="enable-background:new 0 0 40 36;" xml:space="preserve">
+                                    <g id="Page-1_4_" sketch:type="MSPage">
+                                        <g id="Desktop_4_" transform="translate(-84.000000, -410.000000)" sketch:type="MSArtboardGroup">
+                                            <path id="Cart" sketch:type="MSShapeGroup" class="st0" d="M94.5,434.6h24.8l4.7-15.7H92.2l-1.3-8.9H84v4.8h3.1l3.7,27.8h0.1
+                                                c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h12.8c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h1.7v-3.9l-25.8-0.1L94.5,434.6"
+                                                />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a></li>
+                            <li>
+                                <form>
+                                        <div class="" ng-class="{'noDisplay': showSearch,'display':!showSearch}" style="width:100%; margin: 0 auto; text-align:center; font-family: helvetica, arial, sans-serif;margin-top:17px;"
+                                                <a ng-click="openSearch()">
+                                                  <svg class="svg-icon search-icon" ng-click="openSearch()" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+                                                </a>
+                                        </div>
+                                        <input class="" ng-class="{'search-active': showSearch,'noDisplay':!showSearch}" type="text" name="search" placeholder="Search..">
+                                        <div class="right closeIcon" ng-click="closeSearch()" ng-class="{'display': showSearch,'noDisplay':!showSearch}" class="X" draggable="true">&times;</div>
+                                </form>
+                            </li>
+                        </ul>
+                </nav>
+             </div>
+             <section class="headline">
+                    <img class="mySlides" src="images/slider-2.jpg" alt="Company Logo">
+                    <img class="mySlides" src="images/slider-1.jpg" alt="Company Logo">
+                    <img class="mySlides" src="images/slider-3.jpg" alt="Company Logo">
+                    <div class="centered">
+                        <h1>BRILLIENT</h1>
+                        <h1>SMART & BIG</h1>
+                        <h1>WEBSITES</h1>
+                        <p>HELLO ARE YOU READY TO START?</p>
+                    </div>
+             </section>
+             <section class="features sliderIconBox">
+                    <div style="width:100%">
+                            <div class="w3-left w3-hover-text-khaki left" ng-click="plusDivs(-1)">&#10094;</div>
+                            <div class="w3-right w3-hover-text-khaki right" ng-click="plusDivs(1)">&#10095;</div>
+                    </div>
+             </section>
+             <section class="features">
+                    <div class="w3-container">
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)">o</span>
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)">o</span>
+                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)">o</span>
+                    </div>
+             </section>
+             <section class="features sec1">
+                    <div class="feature-container">
+                       <h1>RECENT PORTFOLIO</h1>
+                      <p>While flexbox is used for the the mobile navbar, CSS grid is used for the desktop navbar showing many ways we can use both.</p>
+                      <ul>
+                            <li><a href="#All">SHOW ALL</a></li>
+                            <li><a href="#creative">CREATIVE</a></li>
+                            <li><a href="#digital">DIGITAL</a></li>
+                            <li><a href="#marketing">MARKETING</a></li>
+                            <li><a href="#styling">STYLING</a></li>
+                      </ul>
+                    </div>
+            </section>
+             <section class="features featuresMenu">
+               <div class="feature-container">
+                 <img src="images/img-1.jpg" alt="Flexbox Feature">
+               </div>
+               <div class="feature-container">
+                 <img src="images/img-2.jpg" alt="Flexbox Feature">
+               </div>
+               <div class="feature-container">
+                 <img src="images/img-3.jpg" alt="Flexbox Feature">
+               </div>
+               <div class="feature-container">
+                    <img src="images/img-4.jpg" alt="Flexbox Feature">
+                </div>
+             </section>
+             <section class="features featuresMenu">
+                    <div class="feature-container">
+                      <img src="images/img-5.jpg" alt="Flexbox Feature">
+                    </div>
+                    <div class="feature-container">
+                      <img src="images/img-6.jpg" alt="Flexbox Feature">
+                    </div>
+                    <div class="feature-container">
+                      <img src="images/img-7.jpg" alt="Flexbox Feature">
+                    </div>
+                    <div class="feature-container">
+                         <img src="images/img-8.jpg" alt="Flexbox Feature">
+                     </div>
+             </section>
+        </div>
+        <div class="footer">
+             <span class="footerLabel left">
+                @Subjected to copyright by snehal patil
+            </span>
+            <span>
+                <ul>
+                    <li class="media">
+                            <a href="#">
+                                <svg viewBox="0 0 512 512"><path fill="white" d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
+                            </a>
+                    </li>
+                    <li class="media">
+                            <a href="#">
+                                    <svg viewBox="0 0 512 512"><path fill="white" d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
+                            </a>
+                    </li>
+                    <li class="media">
+                        <a href="#">
+                        <svg viewBox="0 0 512 512"><path fill="white" d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg>
+                       </a>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Sourse</a></li>
+                    <li><a href="#About">About Us</a></li>
+                </ul> 
+            </span>
+        </div>
+    </body>
+</html>
